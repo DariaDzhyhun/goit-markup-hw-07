@@ -671,7 +671,11 @@
   margin-bottom: 4px;
 }
 
-.input-modal-form {
+.modal__input--position {
+  position: relative;
+}
+
+.input__form {
   display: block;
   width: 100%;
   resize: none;
@@ -682,14 +686,12 @@
   fill: currentColor;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.input-modal-form:hover,
-.input-modal-form:focus {
+.input__form:hover, .input__form:focus {
   border: 1px solid var(--accent-color);
   outline: none;
 }
 
-.comment {
+.input__form--settings-textarea {
   margin-top: 4px;
   padding-left: 16px;
   resize: none;
@@ -698,7 +700,7 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-.icon-form {
+.input__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -707,7 +709,15 @@
   height: 18px;
 }
 
-.title-checkbox {
+.modal__agreement {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.agreement__title {
   display: block;
   margin-left: 8px;
   font-size: 14px;
@@ -717,26 +727,7 @@
   margin-bottom: 30px;
 }
 
-.checkbox {
-  margin-top: 20px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.modal-link {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-
-.modal-link:hover {
-  text-decoration: none;
-}
-
-.checkbox-icon {
+.checkbox__icon {
   display: inline-block;
   position: absolute;
   top: 5px;
@@ -747,20 +738,29 @@
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.checkbox-item:checked + .checkbox-icon {
+.checkbox:checked + .checkbox__icon {
   background-color: var(--accent-color);
   background-image: url(../images/icon\ check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-color);
 }
-
-.checkbox-item:focus + .checkbox-icon {
+.checkbox:focus + .checkbox__icon {
   border-color: var(--accent-color);
 }
 
-.send-button {
+.agreement__link {
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.agreement__link:hover {
+  text-decoration: none;
+}
+
+.modal__button--send {
   width: 200px;
   height: 50px;
   padding: 0;
