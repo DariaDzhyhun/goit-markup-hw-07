@@ -1,5 +1,8 @@
+$fontPrimary: Roboto, sans-serif;
+$fontLogo: Raleway, sans-serif;
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontPrimary;
     color: var(--primary-text-color);
     background-color: var(--white-color);
     letter-spacing: 0.03em;

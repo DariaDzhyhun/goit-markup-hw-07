@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
   background-color: var(--white-color);
   letter-spacing: 0.03em;
@@ -101,54 +101,9 @@ a:focus {
   display: flex;
 }
 
-.header__contacts {
-  list-style: none;
-  padding-left: 0px;
-  display: flex;
-  padding: 0px;
-  margin: var(--margin-none);
-  margin-left: auto;
-  color: var(--primary-text-color);
-  fill: currentColor;
-}
-
-.contacts__item {
-  display: flex;
-  align-items: center;
-  justify-content: baseline;
-}
-.contacts__item + .contacts__item {
-  margin-left: 50px;
-}
-
-.contacts__link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--primary-text-color);
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  fill: currentColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts__link:hover, .contacts__link :focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.contact__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-.contact__icon:hover, .contact__icon :focus {
-  fill: var(--accent-color);
-}
-
 .logo__link {
   margin-right: 93px;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -160,7 +115,7 @@ a:focus {
 }
 
 .logo__link--inverse {
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -197,7 +152,7 @@ a:focus {
   display: block;
 }
 
-.navigation__link--active-page::after {
+.navigation__link--active::after {
   content: "";
   color: var(--accent-color);
   position: absolute;
@@ -209,6 +164,53 @@ a:focus {
   background-color: var(--accent-color);
   border-radius: 2px;
   margin: var(--margin-none);
+}
+
+.header__contacts {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  padding: 0px;
+  margin: var(--margin-none);
+  margin-left: auto;
+  color: var(--primary-text-color);
+  fill: currentColor;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+.contacts__item + .contacts__item {
+  margin-left: 50px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__link:hover,
+.contacts__link :focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contact__icon:hover,
+.contact__icon :focus {
+  fill: var(--accent-color);
 }
 
 .hero {

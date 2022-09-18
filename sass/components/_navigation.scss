@@ -28,7 +28,7 @@
 
 
 }
-.navigation__link--active-page::after {
+.navigation__link--active::after {
     content: '';
     color: var(--accent-color);
     position: absolute;
